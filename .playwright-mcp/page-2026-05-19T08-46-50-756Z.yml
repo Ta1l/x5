@@ -1,0 +1,99 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Основная навигация" [ref=e3]:
+      - link "Север.Курьер, главная" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - text: Север.Курьер
+      - button "Связаться" [expanded] [ref=e5] [cursor=pointer]
+    - region "Работа курьером-партнером в твоем городе!" [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]: Получи до 20 000 рублей за первые 200 заказов!
+        - heading "Работа курьером-партнером в твоем городе!" [level=1] [ref=e10]
+        - paragraph [ref=e11]: Зарабатывай от 450 рублей в час. Свободный график, полная поддержка на каждом шагу.
+        - generic [ref=e12]:
+          - button "Связаться" [expanded] [ref=e13] [cursor=pointer]
+          - generic [ref=e14]: Оформление за 15 минут
+      - generic "Иллюстрация курьера в городе" [ref=e15]:
+        - generic [ref=e24]:
+          - paragraph [ref=e25]: от 450 ₽/час
+          - paragraph [ref=e26]: Санкт-Петербург и города присутствия доставки
+  - main [ref=e33]:
+    - region "Мы работаем во всех городах присутствия доставки!" [ref=e34]:
+      - generic [ref=e35]:
+        - paragraph [ref=e36]: Преимущества
+        - heading "Мы работаем во всех городах присутствия доставки!" [level=2] [ref=e37]
+      - generic [ref=e38]:
+        - article [ref=e39]:
+          - generic [ref=e40]: "01"
+          - heading "Быстрый старт" [level=3] [ref=e41]
+          - paragraph [ref=e42]: Оформление онлайн, понятные шаги и первая смена без долгого ожидания.
+        - article [ref=e43]:
+          - generic [ref=e44]: "02"
+          - heading "Поддержка 16/7" [level=3] [ref=e45]
+          - paragraph [ref=e46]: Команда помогает с документами, слотами, заказами и вопросами по выплатам.
+        - article [ref=e47]:
+          - generic [ref=e48]: "03"
+          - heading "Транспорт рядом" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Пешком, на велосипеде, самокате или автомобиле — выбирай удобный формат.
+    - region "Кто может стать курьером?" [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Условия
+          - heading "Кто может стать курьером?" [level=2] [ref=e55]
+          - paragraph [ref=e56]: Мы помогаем выбрать подходящий формат оформления и сопровождаем кандидата до первого заказа.
+        - generic [ref=e57]:
+          - article [ref=e58]:
+            - img [ref=e60]
+            - heading "Граждане РФ (Паспорт)" [level=3] [ref=e62]
+          - article [ref=e63]:
+            - img [ref=e65]
+            - heading "Граждане стран ЕАЭС" [level=3] [ref=e67]
+          - article [ref=e68]:
+            - img [ref=e70]
+            - heading "Иностранные граждане с патентом" [level=3] [ref=e72]
+  - complementary "Заявка курьера":
+    - button "Открыть чат оформления" [expanded]:
+      - img
+    - dialog "Поддержка оформления" [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - img [ref=e77]
+          - generic [ref=e79]:
+            - heading "Поддержка оформления" [level=2] [ref=e80]
+            - paragraph [ref=e81]: онлайн 16/7
+        - button "Закрыть чат оформления" [ref=e82] [cursor=pointer]:
+          - img [ref=e83]
+      - generic [ref=e85]:
+        - paragraph [ref=e86]: Привет! Готов стать курьером в своем городе? Напиши свой номер телефона, и мы поможем оформиться за 15 минут!
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]: Имя
+            - textbox "Имя" [active] [ref=e90]:
+              - /placeholder: Например, Анна
+          - generic [ref=e91]:
+            - generic [ref=e92]: Номер телефона
+            - textbox "Номер телефона" [ref=e93]:
+              - /placeholder: +7 999 123-45-67
+          - generic [ref=e94]:
+            - generic [ref=e95]: Гражданство
+            - combobox "Гражданство" [ref=e96]:
+              - option "Выберите вариант" [selected]
+              - option "Гражданство РФ"
+              - option "Гражданство стран ЕАЭС (Беларусь, Казахстан, Киргизия, Армения)"
+              - option "Иностранное гражданство с патентом"
+          - group "Предпочитаемая соцсеть/мессенджер" [ref=e97]:
+            - generic [ref=e98]: Предпочитаемая соцсеть/мессенджер
+            - generic [ref=e99]:
+              - generic [ref=e100] [cursor=pointer]:
+                - radio "Телеграм" [ref=e101]
+                - generic [ref=e102]: Телеграм
+              - generic [ref=e103] [cursor=pointer]:
+                - radio "Макс" [ref=e104]
+                - generic [ref=e105]: Макс
+              - generic [ref=e106] [cursor=pointer]:
+                - radio "Ватсап" [ref=e107]
+                - generic [ref=e108]: Ватсап
+              - generic [ref=e109] [cursor=pointer]:
+                - radio "Вайбер" [ref=e110]
+                - generic [ref=e111]: Вайбер
+          - button "Отправить заявку" [ref=e112] [cursor=pointer]
