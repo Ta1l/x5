@@ -12,8 +12,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Статические файлы
-app.use(express.static(path.join(__dirname)));
+// Статические файлы отключены - их раздаёт Nginx
+// app.use(express.static(path.join(__dirname)));
 
 // Инициализация SQLite БД
 const db = new sqlite3.Database('./courier_applications.db', (err) => {
@@ -131,16 +131,16 @@ app.get('/api/applications/:id', (req, res) => {
   );
 });
 
-// Главная страница
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+// Главная страница отключена - её раздаёт Nginx
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'index.html'));
+// });
 
-// Запуск сервера
-app.listen(PORT, () => {
+// Запуск сервера только на localhost (безопасность!)
+app.listen(PORT, '127.0.0.1', () => {
   console.log(`\n╔════════════════════════════════════════╗`);
   console.log(`║  🚀 Сервер запущен успешно!           ║`);
-  console.log(`║  URL: http://localhost:${PORT}                    ║`);
+  console.log(`║  URL: http://127.0.0.1:${PORT}         ║`);
   console.log(`║  БД: courier_applications.db          ║`);
   console.log(`╚════════════════════════════════════════╝\n`);
 });
